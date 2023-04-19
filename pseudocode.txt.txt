@@ -1,0 +1,23 @@
+1. Initialize state variables:
+    numStrings: an empty string
+    strings: an empty array
+    comparisonType: an empty string
+    error: an empty string
+    result: an empty array
+2. Define a function named countVowelsAndConsonants which accepts a string as an argument and returns an array of arrays containing vowel and consonant counts and their positions respectively.
+
+3. Define a functional component named App which renders the UI and manages state.
+
+4. Inside the App component:
+    4.1 Define state variables using the useState hook
+    4.2 Define event handler functions:
+        4.2.1 handleNumStringsChange which updates the numStrings state variable based on the user input
+        4.2.2 handleStringChange which updates the strings state variable based on the user input
+        4.2.3 handleComparisonTypeChange which updates the comparisonType state variable based on the user input
+        4.2.4 showResult which counts the vowels and consonants in each string and updates the result state variable with the appropriate output
+        4.2.5 handleSubmit which is called when the user submits the form and calls the showResult function
+
+5. Render the UI using JSX, conditionally rendering the UI based on the state variables:
+    5.1 If numStrings is an empty string, render the input field for numStrings
+    5.2 Otherwise, render the form with input fields for each string and a dropdown to select the comparison type
+        Render the result of the comparison, if any.
